@@ -41,7 +41,8 @@ const newTextDua = document.createElement("h1");
 const myImage = document.querySelector("img");
 button2.addEventListener("click", () => {
   // image
-  myImage.src = "https://media.tenor.com/VWML1I5Q3aoAAAAM/milk-and.gif";
+  myImage.src = "https://media.tenor.com/TWoRbtqnMJkAAAAj/peach-goma.gif";
+  myImage.className = "h-[200px] rounded-full";
   // button
   for (let i = 0; i < myButton.length; i++) {
     myButton[i].remove();
