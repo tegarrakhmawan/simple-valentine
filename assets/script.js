@@ -2,7 +2,7 @@ let button1 = document.querySelector(".button1");
 let button2 = document.querySelector(".button2");
 
 let textArray = [
-  "Loh",
+  "Loh loh",
   "Kenapa No?",
   "Beneran enih??",
   "Baby please",
@@ -14,6 +14,7 @@ let textArray = [
   "Mit",
   "Mitaaaa",
   "Mitaa heii",
+  "Please sayangkuuu 🥺💍",
 ];
 
 let textDisplayIndex = -1;
@@ -28,7 +29,32 @@ button1.addEventListener("click", () => {
   let currWidth = button2.clientWidth;
   button2.style.width = currWidth + 50 + "px";
   button2.style.height = currWidth + 50 + "px";
-  button2.style.fontSize = "50px";
+  button2.style.fontSize = "40px";
 });
 
 // bom
+const container = document.querySelector(".container");
+const myButton = document.querySelectorAll("button");
+const textKeSatu = document.querySelector(".text-one");
+const newTextSatu = document.createElement("h1");
+const newTextDua = document.createElement("h1");
+const myImage = document.querySelector("img");
+button2.addEventListener("click", () => {
+  // image
+  myImage.src = "https://media.tenor.com/VWML1I5Q3aoAAAAM/milk-and.gif";
+  // button
+  for (let i = 0; i < myButton.length; i++) {
+    myButton[i].remove();
+  }
+  // text
+  // text ke satu
+  textKeSatu.textContent = "Yeaaaaaayyyyyyyyy 😻";
+  newTextSatu.innerHTML = "Semoga cepet sembuh yaa sayangkuu 🌹🌹";
+  container.appendChild(newTextSatu);
+  // text ke dua
+  newTextDua.innerHTML = "I love you 💗";
+  container.appendChild(newTextDua);
+  // style new text
+  newTextSatu.className = "text-2xl my-2 text-center";
+  newTextDua.className = "text-4xl my-4 text-center";
+});
